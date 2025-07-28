@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+/*jshint esversion: 8 */
 const express = require('express');
 const mongoose = require('mongoose');
 const fs = require('fs');
@@ -34,7 +34,7 @@ try {
 
 // Express route to home
 app.get('/', async (req, res) => {
-    res.send("Welcome to the Mongoose API")
+    res.send("Welcome to the Mongoose API");
 });
 
 // Express route to fetch all reviews
